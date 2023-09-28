@@ -24,7 +24,7 @@ packages = [
 python = ">=3.11,<4.0"
 fire = "0.4.0"
 
-boto3 = "^1.5.12"
+boto3 = "^1.28.56"
 pyasn1 = "^0.4.8"
 pycryptodome = "^3.10.1"
 hexbytes = "^0.2.2"
@@ -38,7 +38,7 @@ black  = { version = "20.8b1" }
 isort  = { version = "5.6.4" }
 flake8  = { version = "3.8.4" }
 flake8-docstrings = { version = "^1.6.0" }
-pytest  = { version = "6.1.2" }
+pytest  = { version = "7.4.2" }
 pytest-cov  = { version = "2.10.1" }
 tox  = { version = "^3.20.1" }
 virtualenv  = { version = "^20.2.2" }
@@ -80,9 +80,6 @@ doc = [
 
 [tool.poetry.scripts]
 ethereum_kms_signer = 'ethereum_kms_signer.cli:main'
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.4.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
